@@ -1,0 +1,86 @@
+/* index.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.add-button,
+.done-button,
+.delete-button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.done-button {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.no-record {
+  margin-top: 10px;
+  color: #888;
+}
+
+.todo-item {
+  background-color: #f2f2f2;
+  padding: 8px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-item.done {
+  background-color: #d9f7be; /* Green color for completed tasks */
+  color: #333; /* Adjust text color for better visibility */
+}
+
+
+.todo-item span {
+  margin-left: auto;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-field {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
